@@ -1,64 +1,90 @@
 # 📊 Bank Loan Analytics Dashboard | SQL & Power BI
 
-## 🔍 Project Overview
-This project focuses on analyzing bank loan data to evaluate loan performance, customer behavior, and credit risk. Using **SQL Server** for data analysis and **Power BI** for visualization, the dashboard provides actionable insights into loan applications, funding trends, repayments, and loan quality.
+## 📌 Project Overview
+The **Bank Loan Analytics Dashboard** is an end-to-end data analytics project designed to analyze bank loan data and evaluate loan performance, repayment behavior, and credit risk.
 
-The report is designed to help stakeholders monitor **good vs bad loans**, track **monthly trends**, and drill down into **individual loan records** for deeper analysis.
-
----
-
-## 🎯 Objectives
-- Analyze overall loan applications and funding trends  
-- Evaluate repayment performance and loan quality  
-- Identify good and bad loans based on loan status  
-- Enable drill-through analysis for loan-level details  
+The project uses **SQL Server** for data analysis and **Power BI** for interactive visualization, enabling stakeholders to monitor key loan metrics, compare good and bad loans, analyze trends over time, and drill down into individual loan records.
 
 ---
 
-## 🛠 Tools & Technologies
-- **SQL Server** – Data querying, aggregation, and KPI calculations  
+## 🎯 Business Objectives
+- Analyze overall loan applications and funding performance  
+- Evaluate repayment behavior and loan quality  
+- Identify patterns in good vs bad loans  
+- Track monthly trends in loan applications and disbursements  
+- Enable loan-level analysis using drill-through functionality  
+
+---
+
+## 🛠 Tools & Technologies Used
+- **SQL Server** – Data querying, aggregations, KPI calculations  
 - **Power BI** – Interactive dashboards, DAX measures, drill-through  
-- **Microsoft Excel** – Initial data validation and exploration  
+- **Microsoft Excel** – Initial data exploration and validation  
 
 ---
 
-## 🧮 SQL Analysis Highlights
-- Calculated key KPIs such as:
+## 🧮 SQL Analysis Summary
+SQL was used to perform structured analysis and calculate key business metrics, including:
+
+- **Key KPIs**
   - Total Loan Applications  
   - Total Funded Amount  
   - Total Amount Received  
   - Average Interest Rate  
   - Average Debt-to-Income (DTI)  
-- Performed **MTD and MoM analysis** using date-based filtering  
-- Classified loans into:
-  - **Good Loans** (Fully Paid, Current)  
-  - **Bad Loans** (Charged Off)  
-- Aggregated and analyzed loan data by:
+
+- **Time-Based Analysis**
+  - Month-to-Date (MTD) and Previous Month-to-Date (PMTD) comparisons  
+  - Monthly loan application trends  
+
+- **Loan Quality Classification**
+  - **Good Loans:** Fully Paid, Current  
+  - **Bad Loans:** Charged Off  
+
+- **Dimensional Analysis**
   - Loan Status  
   - State  
   - Purpose  
   - Employment Length  
   - Loan Term  
+  - Home Ownership  
 
 ---
 
-## 📈 Power BI Dashboard Features
-- KPI cards with MTD and MoM comparisons  
-- Good vs Bad Loan distribution by applications, funded amount, and amount received  
-- Monthly loan application trend analysis  
-- State-wise loan application visualization  
-- Loan analysis by purpose, term, employment length, and home ownership  
-- **Drill-through functionality** from summary visuals to a loan-level details page  
+## 📈 Power BI Dashboard Preview
+
+### 🔹 Summary Dashboard
+Shows high-level KPIs, good vs bad loan comparison, and monthly trends.
+
+![Summary Dashboard](images/summary.png)
+
+---
+
+### 🔹 Loan Overview & Analysis
+Provides insights by loan purpose, term, employment length, and home ownership.
+
+![Overview Dashboard](images/overview.png)
+
+---
+
+### 🔹 Loan Details Page
+Displays individual loan records and supports drill-through analysis.
+
+![Details Dashboard](images/details.png)
 
 ---
 
 ## 🧭 Drill-Through Functionality
-Users can right-click on loan status or category visuals in the summary dashboard and drill through to the **Details page**, which displays individual loan records filtered based on the selected criteria.
+Drill-through is implemented to allow users to:
+- Right-click on summary visuals (e.g., loan status or category)
+- Navigate to the **Details page**
+- View loan-level records filtered based on the selected context  
+
+This feature bridges high-level insights with granular data exploration.
 
 ---
 
 ## 📂 Project Structure
-
 Bank-Loan-Analytics-SQL-PowerBI/
 ├── sql/
 │ └── bank_loan_analysis.sql
@@ -70,19 +96,20 @@ Bank-Loan-Analytics-SQL-PowerBI/
 │ └── details.png
 └── README.md
 
+
 ---
 
 ## 📌 Key Insights
-- Majority of loan applications fall under good loan categories  
-- Debt consolidation is the most common loan purpose  
-- Loan applications show consistent trends across months  
-- Charged-off loans generally have higher interest rates and DTI values  
+- Majority of loan applications fall under **good loan categories**  
+- **Debt consolidation** is the most common loan purpose  
+- Loan applications show consistent monthly trends  
+- **Charged-off loans** generally have higher interest rates and DTI values  
 
 ---
 
 ## 🚀 Conclusion
-This project demonstrates an end-to-end **data analytics workflow**, from SQL-based data analysis to business-focused Power BI reporting. It highlights how data-driven insights can support **risk assessment, performance monitoring, and decision-making** in the banking domain.
+This project demonstrates a complete **data analytics workflow**, from SQL-based data analysis to interactive Power BI reporting. It highlights how analytics can support **performance monitoring, risk assessment, and data-driven decision-making** in the banking domain.
 
 ---
 
-📬 *For any questions or feedback, feel free to connect via LinkedIn or GitHub.*
+📬 *Feel free to connect via GitHub or LinkedIn for feedback or collaboration.*
